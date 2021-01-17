@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevent</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header container">
+        <img class="header_logo" src="./images/logo_up.png" alt="logo" width="277" height="60" />
+        <div class="contacts_select_wrapper">
+        <div class="header_contacts">
+            <p class="header_contacts_shedule">Графік роботи: <time>09:00</time>-<time>18:00</time></p>
+            <a class="header_contacts_tel" href="tel:(098)8690025">(098) 86 900 25</a>
+        </div>
+        <div class="header_select">
+            <div class="header_select_header">
+<span class="header_select_current">ua</span>
+            </div>
+            <div class="header_select_body">
+                <ul  class="header_select_list list">
+                <li class="header_select_item item_en">EN</li>
+                <li class="header_select_item item_pl">PL</li>
+                <li class="header_select_item item_ru">RU</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="header_buttons">
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu-burger" href="./images/sprite.svg#icon-burger"></use>
+                <use class="icon-menu-cross" href="./images/sprite.svg#icon-close-cross"></use>
+            </svg>
+        </button>
+        <nav class="header_navigation menu-wrapper" data-menu>
+            <ul class="header_navigation_list list">
+                <li class="header_navigation_item"><a class="header_navigation_link" href="">ГОЛОВНА</a></li>
+                <li class="header_navigation_item"><a class="header_navigation_link" href="">КОМПАНІЯ</a></li>
+                <li class="header_navigation_item"><a class="header_navigation_link menu" href="">ПРОДУКЦІЯ</a></li>
+                <li class="header_navigation_item">
+                    <a class="header_navigation_link menu submenu" href="">ПІДТРИМКА</a>
+                    <div class="header_navigation_submenu_wrapper">
+                    <ul class="header_navigation_submenu list">
+                        <li class="header_navigation_submenu_item"><a class="header_navigation_submenu_item_link" href="">Документація</a></li>
+                        <li class="header_navigation_submenu_item"><a class="header_navigation_submenu_item_link" href="">Питання та відповіді</a></li>
+                        <li class="header_navigation_submenu_item"><a class="header_navigation_submenu_item_link" href="">Відео та мультимедія</a></li>
+                    </ul>
+                    </div>
+                <li class="header_navigation_item"><a class="header_navigation_link" href="">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+        <button class="header_search_button" type="button"></button>
+        </div>
+    </header> 
+    <main>
+        <!-- Герой -->
+        <!-- <section>
+            <p>ПРОМИСЛОВЕ</p>
+            <h1>Кліматичне Обладнання</h1>
+            <p>Працює з кращими постачальниками комплектуючих
+            з усього світу, розробляє обладнання стандартного і
+            не стандартного виконання.</p>
+            <button>ДЕТАЛЬНІШЕ</button>
+        </section>
+        <!-- Переваги -->
+        <!-- <section>
+            <h2 hidden>Наші переваги</h2>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <h3>Якість</h3>
+                    <p>Обладнання складається з комплектуючих європейського рівня.</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <h3>Гарантія</h3>
+                    <p>Продукти Trevent мають 24 місяці гарантії.</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <h3>Підтримка</h3>
+                    <p>Кваліфікований персонал завжди готовий допомогти.</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <h3>Технологія</h3>
+                    <p>Використовуються сучасні технології та матеріали.</p>
+                </li>
+            </ul>
+</section>
+<section>
+    <h2>ПРОДУКЦІЯ</h2>
+    <p>Використання електрики в якості джерела нагріву отримало свою популярність в деяких випадках. Такі рішення застосовують
+    для реалізації системи опалення в умовах, де немає можливості підключення традиційного теплоносія (води) або де системи
+    опалення планується використовувати тимчасово.</p>
+    <ul>
+        <li>
+            <img src="" alt="">
+            <div>
+            <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+            </div>
+            <div hidden>
+                <img src="" alt="">
+                <div>
+                <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                <p>Використання електрики в якості
+                джерела нагріву отримало власну
+                популярність в деяких випадках.</p>
+                <button>ДЕТАЛЬНІШЕ</button>
+</div>
+
+            </div>
+        </li>
+        <li>
+            <img src="" alt="">
+            <div>
+                <h3>ВОДЯНІ ТЕПЛОНОСІЇ</h3>
+            </div>
+            <div hidden>
+                <img src="" alt="">
+                <div>
+                    <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                    <p>Використання електрики в якості
+                        джерела нагріву отримало власну
+                        популярність в деяких випадках.</p>
+                    <button>ДЕТАЛЬНІШЕ</button>
+                </div>
+                </div>
+           </li>
+           <li>
+            <img src="" alt="">
+            <div>
+                <h3>ПОВІТРЯНІ ЗАВІСИ</h3>
+            </div>
+            <div hidden>
+                <img src="" alt="">
+                <div>
+                    <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                    <p>Використання електрики в якості
+                        джерела нагріву отримало власну
+                        популярність в деяких випадках.</p>
+                    <button>ДЕТАЛЬНІШЕ</button>
+                </div>
+                </div>
+           </li>
+            <li>
+                <img src="" alt="">
+                <div>
+                    <h3>КАМЕРИ ПРИПЛИВУ</h3>
+                </div>
+                <div hidden>
+                    <img src="" alt="">
+                    <div>
+                        <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                        <p>Використання електрики в якості
+                            джерела нагріву отримало власну
+                            популярність в деяких випадках.</p>
+                        <button>ДЕТАЛЬНІШЕ</button>
+                    </div>
+                    </div>
+            </li>
+    </ul>
+</section>
+<section>
+    <h2>НАМ ДОВІРЯЮТЬ</h2>
+    <div>
+        <ul>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+    </div>
+</section>
+    </main>
+<footer>
+    <img src="" alt="logo_down">
+    <nav>
+        <ul>
+            <li>Компанія</li>
+            <li>Продукція</li>
+            <li>Рішеня</li>
+            <li>Підтримка</li>
+            <li>Питання та відповіді</li>
+            <li>Контакти</li>
+        </ul>
+    </nav>
+    <div>
+        <a href="facebook">facebook</a>
+        <a href="youtube">youtube</a>
+</div>
+<div>
+    <p>&copy;TREVENT, 2019. Дизайн розробляли ONCA</p>
+</div>
+</footer> --> 
+<script src="./index.js" type="module"></script>
+</body>
+</html>
