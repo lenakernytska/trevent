@@ -1,0 +1,17 @@
+.button {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  background-color: #e6362c;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: #e6362c;
+    background-color: #ffffff;
+  }
+}

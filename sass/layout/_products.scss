@@ -1,0 +1,129 @@
+.products {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 63px;
+  background-image: url(/images/fon_produkts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-height: 1021px;
+  opacity: 0.8;
+  position: relative;
+}
+.products_title {
+  font-family: "SegoeUI-Bold";
+  font-size: 37px;
+  line-height: 1.64;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 49px 0;
+}
+
+.products_description {
+  font-size: 19px;
+  line-height: 1.2;
+  margin: 0 auto 40px auto;
+  max-width: 942px;
+}
+
+.products_list_item.product_1 {
+  background-image: url(/images/slide_2.png);
+  width: 940px;
+  height: 400px;
+}
+
+.products_list_item.product_2 {
+  background-image: url(/images/slide_3.jpg);
+  max-width: 765px;
+  height: 575px;
+}
+
+.products_list_item.product_3 {
+  background-image: url(/images/slide_4.jpg);
+  max-width: 940px;
+  height: 400px;
+}
+
+.products_list_item.product_4 {
+  background-image: url(/images/slide_2.png);
+  max-width: 965px;
+  height: 400px;
+}
+
+.products_list_item {
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+// @media screen and (min-width: 768px) {
+//   .products_list {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 1900px;
+//     height: 470px;
+//     border-bottom: 3px solid #4d4d4d;
+//     max-width: 1298px;
+//   }
+// }
+
+.products_list_title {
+  font-family: "SegoeUI-Bold";
+  font-size: 25px;
+  line-height: 1.48;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.products_list_title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 3, 0.4);
+  width: 342px;
+  height: 100%;
+  padding-right: 62px;
+  padding-left: 62px;
+}
+
+.products_hover_title {
+  font-family: "SegoeUI-Bold";
+  font-size: 19px;
+  line-height: 3;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #e6e6e6;
+  margin: 0 0 10px 0;
+}
+.products_hover_description {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 226px;
+  margin: 0 0 20px 0;
+}
+
+.products_button {
+  font-size: 14px;
+}
+
+.products_image_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products_list_hover_wrapper {
+  background-color: rgba(0, 0, 3, 0.4);
+  width: 342px;
+  height: 100%;
+  text-align: center;
+}

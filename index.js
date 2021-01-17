@@ -34,14 +34,18 @@ function selectItemHandler(event){
 })();
 
 const navLinkRef = document.querySelector(".submenu");
-  const submenuNavRef = document.querySelector(".header_navigation_submenu_wrapper");
-console.log(navLinkRef)
-  navLinkRef.addEventListener("click", submenuNavHandler)
+const submenuNavRef = document.querySelector(".header_navigation_submenu_wrapper");
+const bodyRef = document.querySelector("body");
+console.log(bodyRef)
+navLinkRef.addEventListener("mouseover", submenuMouseOn);
+ bodyRef.addEventListener("click", submenuMouseOut)
     
-function submenuNavHandler(event) {
+function submenuMouseOn(event) {
   event.preventDefault();
   console.log(event)
-  submenuNavRef.classList.toggle("is-open");
+  submenuNavRef.classList.add("is-open");
 }
-
+function submenuMouseOut() {
+  submenuNavRef.classList.remove("is-open");
+}
 

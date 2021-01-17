@@ -1,0 +1,68 @@
+.advantages {
+  padding-top: 49px;
+  padding-bottom: 76px;
+  border-bottom: 3px solid #4d4d4d;
+  max-width: 1298px;
+}
+
+.advantages_list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+.advantages_image_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages_list_item {
+  max-width: 261px;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    &:hover,
+    &:focus {
+      border: 1px solid #4d4d4d;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 15px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages_title {
+  font-family: "SegoeUIBlack";
+  font-size: 25px;
+  line-height: 3;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.016em;
+  margin: 0 0 12px 0;
+}
+
+.advantages_description {
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0;
+}

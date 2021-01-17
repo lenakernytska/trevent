@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trevent</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -57,114 +59,161 @@
     </header> 
     <main>
         <!-- Герой -->
-        <!-- <section>
-            <p>ПРОМИСЛОВЕ</p>
-            <h1>Кліматичне Обладнання</h1>
-            <p>Працює з кращими постачальниками комплектуючих
-            з усього світу, розробляє обладнання стандартного і
-            не стандартного виконання.</p>
-            <button>ДЕТАЛЬНІШЕ</button>
+        <section class="hero"> 
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide_1">
+                    <div class="hero_text_wrapper container">
+                    <p class="hero_pretitle">Промислове</p>
+                    <h1 class="hero_title">Кліматичне Обладнання</h1>
+                    <p class="hero_description">Працює з кращими постачальниками комплектуючих
+                        з усього світу, розробляє обладнання стандартного і
+                        не стандартного виконання.</p>
+                    <button class="button hero_button">ДЕТАЛЬНІШЕ</button>
+                </div>
+                </div>
+                <div class="swiper-slide slide_2">
+                    <div class="hero_text_wrapper container">
+                        <p class="hero_pretitle">Промислове</p>
+                        <h1 class="hero_title">Кліматичне Обладнання</h1>
+                        <p class="hero_description">Працює з кращими постачальниками комплектуючих
+                            з усього світу, розробляє обладнання стандартного і
+                            не стандартного виконання.</p>
+                        <button class="button hero_button">ДЕТАЛЬНІШЕ</button>
+                </div>
+                </div>
+                <div class="swiper-slide slide_3">
+                    <div class="hero_text_wrapper container">
+                        <p class="hero_pretitle">Промислове</p>
+                        <h1 class="hero_title">Кліматичне Обладнання</h1>
+                        <p class="hero_description">Працює з кращими постачальниками комплектуючих
+                            з усього світу, розробляє обладнання стандартного і
+                            не стандартного виконання.</p>
+                        <button class="button hero_button">ДЕТАЛЬНІШЕ</button>
+            </div>
+            </div>
+                <div class="swiper-slide slide_4">
+                    <div class="hero_text_wrapper container">
+                        <p class="hero_pretitle">Промислове</p>
+                        <h1 class="hero_title">Кліматичне Обладнання</h1>
+                        <p class="hero_description">Працює з кращими постачальниками комплектуючих
+                            з усього світу, розробляє обладнання стандартного і
+                            не стандартного виконання.</p>
+                        <button class="button hero_button">ДЕТАЛЬНІШЕ</button>
+            </div>
+            </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
         </section>
-        <!-- Переваги -->
-        <!-- <section>
+         <!-- Переваги -->
+         <section class="advantages container">
             <h2 hidden>Наші переваги</h2>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <h3>Якість</h3>
-                    <p>Обладнання складається з комплектуючих європейського рівня.</p>
+            <ul class="advantages_list list">
+                <li class="advantages_list_item">
+                    <div class="advantages_image_wrapper">
+                    <img class="advantages_image" src="./images/quality.png" alt="іконка-якість">
+                    </div>
+                    <h3 class="advantages_title">Якість</h3>
+                    <p class="advantages_description">Обладнання складається з комплектуючих європейського рівня.</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <h3>Гарантія</h3>
-                    <p>Продукти Trevent мають 24 місяці гарантії.</p>
+                <li class="advantages_list_item">
+                    <div class="advantages_image_wrapper">
+                    <img class="advantages_image" src="./images/quarantee.png" alt="іконка-гарантія">
+                    </div>
+                    <h3 class="advantages_title">Гарантія</h3>
+                    <p class="advantages_description">Продукти Trevent мають 24 місяці гарантії.</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <h3>Підтримка</h3>
-                    <p>Кваліфікований персонал завжди готовий допомогти.</p>
+                <li class="advantages_list_item">
+                    <div class="advantages_image_wrapper">
+                    <img class="advantages_image" src="./images/support.png" alt="іконка-підтримка">
+                    </div>
+                    <h3 class="advantages_title">Підтримка</h3>
+                    <p class="advantages_description">Кваліфікований персонал завжди готовий допомогти.</p>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <h3>Технологія</h3>
-                    <p>Використовуються сучасні технології та матеріали.</p>
+                <li class="advantages_list_item">
+                    <div class="advantages_image_wrapper">
+                    <img class="advantages_image" src="./images/tehnology.png" alt="іконка-технології">
+                    </div>
+                    <h3 class="advantages_title">Технологія</h3>
+                    <p class="advantages_description">Використовуються сучасні технології та матеріали.</p>
                 </li>
             </ul>
 </section>
-<section>
-    <h2>ПРОДУКЦІЯ</h2>
-    <p>Використання електрики в якості джерела нагріву отримало свою популярність в деяких випадках. Такі рішення застосовують
+<!-- Продукція -->
+ <section class="products">
+     <div class="container">
+    <h2 class="products_title">ПРОДУКЦІЯ</h2>
+    <p class="products_description">Використання електрики в якості джерела нагріву отримало свою популярність в деяких випадках. Такі рішення застосовують
     для реалізації системи опалення в умовах, де немає можливості підключення традиційного теплоносія (води) або де системи
     опалення планується використовувати тимчасово.</p>
-    <ul>
-        <li>
-            <img src="" alt="">
-            <div>
-            <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+    <ul class="products_list list">
+        <li class="products_list_item product_1">
+            <div class="products_list_title_wrapper">
+            <h3 class="products_list_title">ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
             </div>
-            <div hidden>
-                <img src="" alt="">
-                <div>
-                <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
-                <p>Використання електрики в якості
+            <div class="products_list_hover_wrapper" >
+                <div class="products_image_wrapper">
+                <img src="./images/cooler.png" alt="нагрівач">
+                </div>
+                <h3 class="products_hover_title">ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                <p class="products_hover_description">Використання електрики в якості
                 джерела нагріву отримало власну
                 популярність в деяких випадках.</p>
-                <button>ДЕТАЛЬНІШЕ</button>
+                <button class="button products_button">ДЕТАЛЬНІШЕ</button>
 </div>
-
-            </div>
         </li>
-        <li>
-            <img src="" alt="">
-            <div>
-                <h3>ВОДЯНІ ТЕПЛОНОСІЇ</h3>
+        <li class="products_list_item product_2">
+            <div class="products_list_title_wrapper">
+                <h3 class="products_list_title">ВОДЯНІ ТЕПЛОНОСІЇ</h3>
             </div>
-            <div hidden>
-                <img src="" alt="">
-                <div>
-                    <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
-                    <p>Використання електрики в якості
+            <div class="products_list_hover_wrapper" hidden>
+                <div class="products_image_wrapper">
+                    <img src="./images/cooler.png" alt="нагрівач">
+                </div>
+                    <h3 class="products_hover_title">ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                    <p class="products_hover_description">Використання електрики в якості
                         джерела нагріву отримало власну
                         популярність в деяких випадках.</p>
-                    <button>ДЕТАЛЬНІШЕ</button>
-                </div>
+                    <button class="button products_button">ДЕТАЛЬНІШЕ</button>
                 </div>
            </li>
-           <li>
-            <img src="" alt="">
-            <div>
-                <h3>ПОВІТРЯНІ ЗАВІСИ</h3>
+           <li class="products_list_item product_3">
+            <div class="products_list_title_wrapper">
+                <h3 class="products_list_title">ПОВІТРЯНІ ЗАВІСИ</h3>
             </div>
-            <div hidden>
-                <img src="" alt="">
-                <div>
-                    <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
-                    <p>Використання електрики в якості
+            <div class="products_list_hover_wrapper" hidden>
+                <div class="products_image_wrapper">
+                    <img src="./images/cooler.png" alt="нагрівач">
+                </div>
+                    <h3 class="products_hover_title">ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                    <p class="products_hover_description">Використання електрики в якості
                         джерела нагріву отримало власну
                         популярність в деяких випадках.</p>
-                    <button>ДЕТАЛЬНІШЕ</button>
-                </div>
+                    <button class="button products_button">ДЕТАЛЬНІШЕ</button>
                 </div>
            </li>
-            <li>
-                <img src="" alt="">
-                <div>
-                    <h3>КАМЕРИ ПРИПЛИВУ</h3>
+            <li class="products_list_item product_4">
+                <div class="products_list_title_wrapper">
+                    <h3 class="products_list_title">КАМЕРИ ПРИПЛИВУ</h3>
                 </div>
-                <div hidden>
-                    <img src="" alt="">
-                    <div>
-                        <h3>ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
-                        <p>Використання електрики в якості
+                <div class="products_list_hover_wrapper" hidden>
+                    <div class="products_image_wrapper">
+                        <img src="./images/cooler.png" alt="нагрівач">
+                    </div>
+                        <h3 class="products_hover_title">ЕЛЕКТРИЧНИЙ НАГРІВ</h3>
+                        <p class="products_hover_description">Використання електрики в якості
                             джерела нагріву отримало власну
                             популярність в деяких випадках.</p>
-                        <button>ДЕТАЛЬНІШЕ</button>
-                    </div>
+                        <button class="button products_button">ДЕТАЛЬНІШЕ</button>
                     </div>
             </li>
     </ul>
+    </div>
 </section>
-<section>
+<!-- <section>
     <h2>НАМ ДОВІРЯЮТЬ</h2>
     <div>
         <ul>
@@ -203,7 +252,10 @@
 <div>
     <p>&copy;TREVENT, 2019. Дизайн розробляли ONCA</p>
 </div>
-</footer> --> 
+</footer>  --> 
 <script src="./index.js" type="module"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
 </body>
 </html>
