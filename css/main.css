@@ -1,27 +1,27 @@
 @font-face {
   font-family: "SegoeUI";
-  src: url("/fonts/SegoeUIRegular.woff") format("woff");
+  src: url("../fonts/SegoeUIRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SegoeIBlackU";
-  src: url("/fonts/SegoeUISemiBold.woff") format("woff");
+  src: url("../fonts/SegoeUISemiBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SegoeUI-Bold";
-  src: url("/fonts/SegoeUIBold.woff") format("woff");
+  src: url("../fonts/SegoeUIBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ClearSans";
-  src: url("/fonts/ClearSansRegular.woff") format("woff");
+  src: url("../fonts/ClearSansRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -1460,6 +1460,6 @@ body {
   margin: -6px 0 0 -10px;
   width: 20px;
   height: 12px;
-  background: url(/images/sprite_png.png) no-repeat -51px -134px;
+  background: url(../images/sprite_png.png) no-repeat -51px -134px;
 }
 /*# sourceMappingURL=main.css.map */
