@@ -1006,7 +1006,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .products {
-    background-image: url(/images/fon_produkts.jpg);
+    background-image: url(../images/fon_produkts.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1035,7 +1035,7 @@ body {
 }
 
 .products_list_item.product_1 {
-  background-image: url(/images/slide_2.png);
+  background-image: url(../images/slide_2.png);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1048,7 +1048,7 @@ body {
 }
 
 .products_list_item.product_2 {
-  background-image: url(/images/slide_3.jpg);
+  background-image: url(../images/slide_3.jpg);
   background-position: center bottom;
 }
 
@@ -1063,7 +1063,7 @@ body {
 }
 
 .products_list_item.product_3 {
-  background-image: url(/images/slide_4.jpg);
+  background-image: url(../images/slide_4.jpg);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1076,7 +1076,7 @@ body {
 }
 
 .products_list_item.product_4 {
-  background-image: url(/images/slide_2.png);
+  background-image: url(../images/slide_2.png);
 }
 
 @media screen and (min-width: 1200px) {
