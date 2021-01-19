@@ -891,19 +891,19 @@ body {
 }
 
 .swiper-slide.hero_slide.slide_1 {
-  background-image: url(/images/slide__1.jpg);
+  background-image: url(./images/slide__1.jpg);
 }
 
 .swiper-slide.hero_slide.slide_2 {
-  background-image: url(/images/slide__1.jpg);
+  background-image: url(./images/slide__1.jpg);
 }
 
 .swiper-slide.hero_slide.slide_3 {
-  background-image: url(/images/slide__1.jpg);
+  background-image: url(./images/slide__1.jpg);
 }
 
 .swiper-slide.hero_slide.slide_4 {
-  background-image: url(/images/slide__1.jpg);
+  background-image: url(./images/slide__1.jpg);
 }
 
 .swiper-pagination-bullet {
@@ -1303,13 +1303,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-slide.slide_1 {
+  .partners_slide_1 {
     margin-right: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .swiper-slide.slide_1 {
+  .partners_slide_1 {
     margin-right: 70px;
   }
 }
