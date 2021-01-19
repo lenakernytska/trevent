@@ -48,11 +48,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px 0 10px;
 }
-.swiper-slide.partners_laptop {
-  padding: 0 20px 0 10px;
-}
+
 .swiper-container.mobile {
   @media screen and (min-width: 768px) {
     display: none;
@@ -71,4 +68,9 @@
     width: 150px;
     height: 50px;
   }
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14;
+  color: #fff;
 }

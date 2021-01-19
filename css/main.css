@@ -821,8 +821,10 @@ body {
   margin: 0 0 31px 0;
 }
 
-.hero_description {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .hero_description {
+    display: none;
+  }
 }
 
 .hero_button {
@@ -1289,11 +1291,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px 0 10px;
-}
-
-.swiper-slide.partners_laptop {
-  padding: 0 20px 0 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1319,6 +1316,12 @@ body {
     width: 150px;
     height: 50px;
   }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14;
+  color: #fff;
 }
 
 .footer {
