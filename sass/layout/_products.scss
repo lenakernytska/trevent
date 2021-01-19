@@ -4,11 +4,8 @@
   @media screen and (min-width: 1200px) {
     background-image: url(../images/fon_produkts.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right center;
     background-size: cover;
-    width: 100%;
-    opacity: 0.8;
-    max-height: 1021px;
     position: relative;
   }
 }
@@ -186,7 +183,6 @@
 .products_list {
   position: relative;
   height: 100%;
-  border-bottom: 3px solid #4d4d4d;
   max-width: 1298px;
   text-align: center;
   @media screen and (min-width: 1200px) {

@@ -1010,11 +1010,8 @@ body {
   .products {
     background-image: url(../images/fon_produkts.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right center;
     background-size: cover;
-    width: 100%;
-    opacity: 0.8;
-    max-height: 1021px;
     position: relative;
   }
 }
@@ -1220,7 +1217,6 @@ body {
 .products_list {
   position: relative;
   height: 100%;
-  border-bottom: 3px solid #4d4d4d;
   max-width: 1298px;
   text-align: center;
 }
@@ -1233,8 +1229,9 @@ body {
 
 .partners {
   border-bottom: 3px solid #4d4d4d;
+  border-top: 3px solid #4d4d4d;
   max-width: 1298px;
-  padding: 87px 0;
+  padding: 60px 0 87px 0;
 }
 
 .partners_list {
@@ -1322,6 +1319,10 @@ body {
 .swiper-button-prev:after {
   font-size: 14;
   color: #fff;
+}
+
+.swiper-button-next:after {
+  margin-left: auto;
 }
 
 .footer {

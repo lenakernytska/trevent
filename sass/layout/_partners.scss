@@ -1,7 +1,8 @@
 .partners {
   border-bottom: 3px solid #4d4d4d;
+  border-top: 3px solid #4d4d4d;
   max-width: 1298px;
-  padding: 87px 0;
+  padding: 60px 0 87px 0;
 }
 
 .partners_list {
@@ -73,4 +74,7 @@
 .swiper-button-prev:after {
   font-size: 14;
   color: #fff;
+}
+.swiper-button-next:after {
+  margin-left: auto;
 }
