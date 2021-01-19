@@ -1,5 +1,5 @@
   var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
+      spaceBetween: 0,
       centeredSlides: true,
       autoplay: {
         delay: 5000,
