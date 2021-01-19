@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 18px;
 }
 
 .advantages_list_item {
@@ -51,9 +52,9 @@
 }
 
 .advantages_title {
-  font-family: "SegoeUIBlack";
+  font-family: "SegoeUI-Bold";
   font-size: 25px;
-  line-height: 3;
+  line-height: 1.2;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.016em;
@@ -62,7 +63,7 @@
 
 .advantages_description {
   font-size: 19px;
-  line-height: 1.2;
+  line-height: 1.7;
   font-weight: 400;
   margin: 0;
 }

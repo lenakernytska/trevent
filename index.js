@@ -49,3 +49,23 @@ function submenuMouseOut() {
   submenuNavRef.classList.remove("is-open");
 }
 
+const productRef = document.querySelectorAll(".products_list_item");
+const titleRef = document.querySelectorAll(".products_list_title_wrapper");
+const hoverRef = document.querySelectorAll(".products_list_hover_wrapper");
+
+productRef.forEach((item)=>item.addEventListener("mouseover", onHoverHandler));
+productRef.forEach((item)=>item.addEventListener("mouseout", outHoverHandler));
+
+
+function onHoverHandler() {
+  titleRef.forEach((item) => item.classList.add("is-hidden"));
+  hoverRef.forEach((item) => item.classList.add("is-focused"));
+}
+
+function outHoverHandler() {
+   titleRef.forEach((item) => item.classList.remove("is-hidden"));
+  hoverRef.forEach((item) => item.classList.remove("is-focused"));
+}
+
+
+ 

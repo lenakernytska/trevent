@@ -11,7 +11,7 @@
   height: 7px;
   position: absolute;
   left: 28px;
-  background: url(../images/sprite_png.png) -156px -10px;
+  background: url(../images/sprite_png.png) -123px -134px;
   background-repeat: no-repeat;
 }
 .header_select_current::before {
@@ -22,7 +22,7 @@
   height: 15px;
   position: absolute;
   right: 30px;
-  background: url(../images/sprite_png.png) -160px -10px;
+  background: url(../images/sprite_png.png) -112px -95px;
   background-repeat: no-repeat;
 }
 .header_select_current {
@@ -30,7 +30,7 @@
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
-  color: #e6362c;
+  color: $accent-text-color;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@
 .header_select_item {
   display: flex;
   align-items: center;
-  font-family: ClearSans;
+  font-family: $secondary-font;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 400;
@@ -64,7 +64,7 @@
   color: #000000;
   &:hover,
   &:focus {
-    color: #e6362c;
+    color: $accent-text-color;
   }
 }
 .header_select_list {
@@ -82,10 +82,10 @@
   background-repeat: no-repeat;
 }
 .item_pl::after {
-  background-position: -112px -96px;
+  background-position: -112px -60px;
 }
 .item_ru::after {
-  background-position: -112px -60px;
+  background-position: -160px -95px;
 }
 .header_select.is-active .header_select_body {
   display: block;

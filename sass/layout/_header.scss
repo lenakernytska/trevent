@@ -1,16 +1,3 @@
-@media screen and (max-width: 767px) {
-  .header {
-    padding-top: 20px;
-    &_logo {
-      margin-bottom: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 240px;
-    }
-  }
-}
-
-// Контакти
 .header_contacts {
   position: relative;
   margin-right: 65px;
@@ -18,26 +5,26 @@
 
 .header_contacts_shedule {
   font-family: "SegoeUI";
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
-  color: #e6362c;
+  color: $accent-text-color;
   margin: 0;
 }
 
 .header_contacts_tel {
   font-family: "SegoeUI-Bold";
-  font-size: 21px;
+  font-size: 16px;
   line-height: 1.15;
   font-weight: 700;
-  color: #ffffff;
+  color: $primary-text-color;
   letter-spacing: 0.07em;
   text-decoration: none;
   margin: 0;
   &:hover,
   &:focus {
-    color: #e6362c;
+    color: $accent-text-color;
   }
 }
 
@@ -58,7 +45,7 @@
   height: 8px;
   top: 25px;
   right: -15px;
-  background: url(../images/sprite_png.png) -160px -82px;
+  background: url(../images/sprite_png.png) -123px -134px;
 }
 
 .contacts_select_wrapper {
@@ -68,18 +55,79 @@
   margin-right: 35px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts_select_wrapper {
-    padding-left: 36px;
+.header_navigation_link {
+  text-decoration: none;
+  color: $primary-text-color;
+  font-family: $secondary-font;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 400;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
   }
 }
 
-@media screen and (max-width: 767px) {
+.header_navigation_item {
+  margin-right: 35px;
+}
+
+.header_navigation_link.menu {
+  position: relative;
+}
+.header_navigation_link.menu::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 10px;
+  right: -15px;
+  background: url(../images/sprite_png.png) -91px -134px;
+}
+
+.header_navigation_submenu_item_link {
+  text-decoration: none;
+  color: $primary-text-color;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.016em;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+
+.header_search_button {
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+  width: 21px;
+  height: 17px;
+  cursor: pointer;
+  background: url(../images/sprite_png.png) no-repeat -10px -134px;
+}
+
+.header_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
   .header {
     padding-top: 20px;
+    &_logo {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 240px;
+    }
   }
   .contacts_select_wrapper {
     margin-bottom: 20px;
+    padding-left: 36px;
   }
   .menu-button {
     outline: transparent;
@@ -103,14 +151,14 @@
   .icon-menu-burger {
     fill: white;
     &:hover {
-      fill: #e6362c;
+      fill: $accent-text-color;
     }
   }
   .icon-menu-cross {
-    fill: white;
+    fill: $primary-text-color;
     &:hover,
     &:focus {
-      fill: #e6362c;
+      fill: $accent-text-color;
     }
   }
   .menu-wrapper {
@@ -122,14 +170,18 @@
     padding-bottom: 60px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    color: $primary-text-color;
     border: 1px solid white;
+    z-index: 1000;
     transform: translateY(0);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     &.is-open {
       display: block;
       transform: translateY(100%);
     }
+  }
+  .header_contacts::after {
+    top: 20px;
   }
   .header_navigation_item:not(:last-child) {
     border-bottom: 1px solid white;
@@ -140,73 +192,8 @@
     padding-left: 20px;
   }
 }
-@media screen and (min-width: 767px) {
-  .menu-button {
-    display: none;
-  }
-}
 
-.header_navigation_link {
-  text-decoration: none;
-  color: white;
-  font-family: ClearSans;
-  font-size: 19px;
-  line-height: 1.2;
-  font-weight: 400;
-  &:hover,
-  &:focus {
-    color: #e6362c;
-  }
-}
-
-.header_navigation_item {
-  margin-right: 35px;
-}
-
-.header_navigation_link.menu {
-  position: relative;
-}
-.header_navigation_link.menu::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 8px;
-  top: 10px;
-  right: -15px;
-  background: url(../images/sprite_png.png) -160px -82px;
-}
-
-.header_navigation_submenu_item_link {
-  text-decoration: none;
-  color: white;
-  font-family: SegoeUI;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  letter-spacing: 0.016em;
-  &:hover,
-  &:focus {
-    color: #e6362c;
-  }
-}
-
-.header_search_button {
-  border: none;
-  padding: 0;
-  flex-shrink: 0;
-  width: 21px;
-  height: 17px;
-  cursor: pointer;
-  background: url(../images/sprite_png.png) no-repeat -160px -45px;
-}
-
-.header_buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header {
     display: flex;
     align-items: center;
@@ -219,39 +206,37 @@
     &_navigation_list {
       display: flex;
     }
-    // &_contacts {
-    //   margin-right: 65px;
-    // }
-    // &_select {
-    //   margin-right: 34px;
-    // }
   }
-}
-
-.header_navigation_submenu {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: 50;
-  top: 112px;
-  left: 0;
-  right: 0;
-  padding: 30px 0 30px;
-  background-color: white;
-}
-
-.header_navigation_submenu_item_link {
-  color: black;
-}
-
-.header_navigation_submenu_item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.header_navigation_submenu_wrapper {
-  display: none;
-}
-
-.header_navigation_submenu_wrapper.is-open {
-  display: block;
+  .header_contacts_shedule {
+    font-size: 12px;
+  }
+  .header_contacts_tel {
+    font-size: 21px;
+  }
+  .header_navigation_submenu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 50;
+    top: 112px;
+    left: 0;
+    right: 0;
+    padding: 30px 0 30px;
+    background-color: #ffffff;
+  }
+  .header_navigation_submenu_item_link {
+    color: #000000;
+  }
+  .header_navigation_submenu_item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .header_navigation_submenu_wrapper {
+    display: none;
+  }
+  .header_navigation_submenu_wrapper.is-open {
+    display: block;
+  }
+  .menu-button {
+    display: none;
+  }
 }

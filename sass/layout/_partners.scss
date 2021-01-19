@@ -1,0 +1,74 @@
+.partners {
+  border-bottom: 3px solid #4d4d4d;
+  max-width: 1298px;
+  padding: 87px 0;
+}
+
+.partners_list {
+  display: flex;
+  justify-content: center;
+}
+
+.partners_list_item {
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.partners_list_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners_title {
+  font-family: "SegoeUI-Bold";
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0 0 47px 0;
+  @media screen and (min-width: 768px) {
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-container.laptop {
+    display: none;
+  }
+}
+
+.swiper-slide.partners_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 10px;
+}
+.swiper-slide.partners_laptop {
+  padding: 0 20px 0 10px;
+}
+.swiper-container.mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.swiper-slide.slide_1 {
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+.partners_image {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 150px;
+    height: 50px;
+  }
+}

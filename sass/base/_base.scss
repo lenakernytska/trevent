@@ -31,9 +31,9 @@ img {
 }
 
 body {
-  font-family: SegoeUI;
-  background-color: black;
-  color: white;
+  font-family: $main-font;
+  background-color: $background-color;
+  color: $primary-text-color;
   margin: 0;
   padding: 0;
 }
